@@ -5,13 +5,13 @@
 * Pelo menos uma máquina worker como um nó a ser gerenciado pelo master
 * As máquinas tenham IP fixo
 
-> Buscando aperfeiçoar, criei um volume compartilhado entre as máquinas e criei um serviço replicando 5 containers. para montagem da pasta comparfilhada entre os nós, usamos o pacote nfs.
+> Buscando aperfeiçoar, criei um volume compartilhado entre as máquinas e criei um serviço replicando 15 containers. Para montagem da pasta compartilhada entre os nós, usamos o pacote nfs.
 
 > Tudo foi definido no *Vagrantfile*
 
-> **OBS:** Há pontos para melhorar, como a criação do serviço do servidor apache no **nó master** após os *nós workers* serem criados e sstiverem rodando.
+> **OBS:** Há pontos para melhorar, tal como a criação do serviço do servidor apache no **nó master** após os *nós workers* serem criados e estiverem rodando.
 
-> A ordem de execução do *Vagrantfile* não segue o fluxo sequencial, sendo assim, não consegui distribuir os containers compartilhados entre os nós.
+> A ordem de execução do *Vagrantfile* não segue o fluxo sequencial, sendo assim, não consegui distribuir os containers compartilhados entre os nós, ele distribui somente se reiniciar o cluster depois de criado.
 
 > **ACEITO SUGESTÕES DE MELHORIA**, seria muito grato pela colaboração.
 
